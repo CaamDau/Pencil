@@ -12,7 +12,7 @@ pod 'CaamDauPencil'
 
 ```
 if #available(iOS 13.0, *) {
-    CD_PencilDraw.show(imageView.image ?? Assets().logo_0, drawing: drawing as? PKDrawing ?? PKDrawing()) { [weak self](draw, image) in
+    PencilDraw.show(imageView.image ?? Assets().logo_0, drawing: drawing as? PKDrawing ?? PKDrawing()) { [weak self](draw, image) in
         self?.drawing = draw
         self?.imageView.image = image
     }

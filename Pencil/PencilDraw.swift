@@ -10,7 +10,7 @@ import UIKit
 import PencilKit
 import CaamDauExtension
 @available(iOS 13.0, *)
-@objc public class CD_PencilDraw: NSObject {
+@objc public class PencilDraw: NSObject {
     @objc public class func show(_ image:UIImage, drawing:PKDrawing = PKDrawing(), margin:CGFloat = 0, minZoomScale:CGFloat = 0.2, maxZoomScale:CGFloat = 4, callback:((PKDrawing, UIImage)->Void)? = nil) {
         let vc = VC_PencilDraw()
         vc.margin = margin
